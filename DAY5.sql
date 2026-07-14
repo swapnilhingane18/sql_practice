@@ -33,3 +33,27 @@ INSERT INTO STUDENT VALUES (116, 'PRIYA',  'FEMALE', 'MECHANICAL',  2, 76, 'INDO
 SELECT * FROM STUDENT;
 
 COMMIT;
+
+-- 1. Display student information exactly as stored
+SELECT *
+FROM STUDENT;
+
+-- 2. Display all columns and MARKS + 5 as BONUS_MARKS
+SELECT *, MARKS + 5 AS BONUS_MARKS
+FROM STUDENT;
+
+-- 3. Display all student details and MARKS * 2 as DOUBLE_MARKS
+SELECT *, MARKS * 2 AS DOUBLE_MARKS
+FROM STUDENT;
+
+-- 4. Display all columns along with YEAR_OF_STUDY + 1 as NEXT_YEAR
+SELECT *, YEAR_OF_STUDY + 1 AS NEXT_YEAR
+FROM STUDENT;
+
+-- 5. Display all student details and MARKS / 10 as MARKS_RATIO
+SELECT *, MARKS / 10 AS MARKS_RATIO
+FROM STUDENT;
+
+-- 6. Display complete STUDENT table and MARKS + 10 as UPDATED_MARKS
+SELECT *, MARKS + 10 AS UPDATED_MARKS
+FROM STUDENT;
