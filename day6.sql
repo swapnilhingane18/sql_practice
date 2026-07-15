@@ -41,3 +41,35 @@ INSERT INTO STUDENT VALUES
 
 INSERT INTO STUDENT VALUES
 (110, 'Pooja', 'Female', 'Computer', 1, 91, 'Mumbai', 18);
+
+-- 1. Display all student details.
+SELECT * FROM STUDENT;
+
+-- 2. Display only STUDENT_NAME and MARKS.
+SELECT STUDENT_NAME, MARKS
+FROM STUDENT;
+
+-- 3. Display STUDENT_NAME, CITY and AGE.
+SELECT STUDENT_NAME, CITY, AGE
+FROM STUDENT;
+
+-- 4. Display all students from the Computer department.
+SELECT *
+FROM STUDENT
+WHERE DEPARTMENT = 'Computer';
+
+-- 5. Display students whose marks are greater than 80.
+SELECT *
+FROM STUDENT
+WHERE MARKS > 80;
+
+-- 6. Display students whose marks are less than 70.
+SELECT *
+FROM STUDENT
+WHERE MARKS < 70;
+
+-- 7. Display students from Pune.
+SELECT *
+FROM STUDENT
+WHERE CITY = 'Pune';
+
