@@ -73,3 +73,43 @@ SELECT *
 FROM STUDENT
 WHERE CITY = 'Pune';
 
+-- 8. Display female students.
+SELECT *
+FROM STUDENT
+WHERE GENDER = 'Female';
+
+-- 9. Display male students from Mumbai.
+SELECT *
+FROM STUDENT
+WHERE GENDER = 'Male'
+AND CITY = 'Mumbai';
+
+-- 10. Display students whose age is greater than 20.
+SELECT *
+FROM STUDENT
+WHERE AGE > 20;
+
+-- 11. Display students studying in Year 2.
+SELECT *
+FROM STUDENT
+WHERE YEAR_OF_STUDY = 2;
+
+-- 12. Display students whose marks are exactly 91.
+SELECT *
+FROM STUDENT
+WHERE MARKS = 91;
+
+-- 13. Display students whose city is Nashik.
+SELECT *
+FROM STUDENT
+WHERE CITY = 'Nashik';
+
+-- 14. Display students whose department is IT.
+SELECT *
+FROM STUDENT
+WHERE DEPARTMENT = 'IT';
+
+-- 15. Display students whose marks are not equal to 85.
+SELECT *
+FROM STUDENT
+WHERE MARKS != 85;
