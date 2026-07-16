@@ -217,3 +217,108 @@ FROM STUDENT;
 SELECT STUDENT_ID,
        DATE_ADD(ADMDATE, INTERVAL 1 DAY) AS NEXT_DAY
 FROM STUDENT;
+
+
+-- 36. Display all students who belong to the COMPUTER department and are in year 1.
+
+SELECT *
+FROM STUDENT
+WHERE DEPARTMENT = 'Computer' AND YEAR_OF_STUDY = 1;
+
+
+-- 37. Display students whose gender is MALE and city is MUMBAI.
+
+SELECT *
+FROM STUDENT
+WHERE GENDER = 'Male' AND CITY = 'Mumbai';
+
+
+-- 38. Display students who are in year 3 and department is IT.
+
+SELECT *
+FROM STUDENT
+WHERE YEAR_OF_STUDY = 3 AND DEPARTMENT = 'IT';
+
+
+-- 39. Display students who scored more than 70 and are from CHENNAI.
+
+SELECT *
+FROM STUDENT
+WHERE MARKS > 70 AND CITY = 'Chennai';
+
+
+-- 40. Display students whose department is COMPUTER and gender is FEMALE.
+
+SELECT *
+FROM STUDENT
+WHERE DEPARTMENT = 'Computer' AND GENDER = 'Female';
+
+
+-- 41. Display students who are in year 2 and city is DELHI.
+
+SELECT *
+FROM STUDENT
+WHERE YEAR_OF_STUDY = 2 AND CITY = 'Delhi';
+
+
+-- 42. Display students who scored less than 40 and are in year 1.
+
+SELECT *
+FROM STUDENT
+WHERE MARKS < 40 AND YEAR_OF_STUDY = 1;
+
+
+-- 43. Display students whose gender is FEMALE and department is ECE.
+
+SELECT *
+FROM STUDENT
+WHERE GENDER = 'Female' AND DEPARTMENT = 'ECE';
+
+
+-- 44. Display students who are from HYDERABAD and scored more than 60.
+
+SELECT *
+FROM STUDENT
+WHERE CITY = 'Hyderabad' AND MARKS > 60;
+
+
+-- 45. Display students who are in year 4 and department is MECH.
+
+SELECT *
+FROM STUDENT
+WHERE YEAR_OF_STUDY = 4 AND DEPARTMENT = 'Mech';
+
+
+-- 46. Display students who belong to IT or COMPUTER department.
+
+SELECT *
+FROM STUDENT
+WHERE DEPARTMENT = 'IT' OR DEPARTMENT = 'Computer';
+
+
+-- 47. Display students who are from DELHI or MUMBAI.
+
+SELECT *
+FROM STUDENT
+WHERE CITY = 'Delhi' OR CITY = 'Mumbai';
+
+
+-- 48. Display students who are in year 1 or year 2.
+
+SELECT *
+FROM STUDENT
+WHERE YEAR_OF_STUDY = 1 OR YEAR_OF_STUDY = 2;
+
+
+-- 49. Display students whose gender is MALE or department is CIVIL.
+
+SELECT *
+FROM STUDENT
+WHERE GENDER = 'Male' OR DEPARTMENT = 'Civil';
+
+
+-- 50. Display students who scored more than 80 or are in year 4.
+
+SELECT *
+FROM STUDENT
+WHERE MARKS > 80 OR YEAR_OF_STUDY = 4;
