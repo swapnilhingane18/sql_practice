@@ -57,3 +57,69 @@ JOIN last_quarter_sales s
 ON e.employee_ID = s.employee_ID
 WHERE e.division = 'Sales'
 AND s.sales >= 100000;
+
+
+/*
+Question: Employee Performance Rewards
+
+The management wants to identify employees who are eligible
+for the "Star Performer Award".
+
+Write a SQL query to display the following columns:
+
+employee_ID,
+name,
+division,
+salary,
+rating,
+bonus
+
+The employee must satisfy ALL of the following conditions:
+
+1. Work in either 'IT' or 'Sales' division.
+2. Salary must be greater than or equal to 60000.
+3. Performance rating must be greater than or equal to 4.
+4. Last quarter bonus must be greater than or equal to 8000.
+
+Tables:
+
+employee_information
+--------------------
+employee_ID
+name
+division
+salary
+
+performance
+-----------
+employee_ID
+rating
+
+last_quarter_bonus
+------------------
+employee_ID
+bonus
+
+Expected Output:
+employee_ID | name | division | salary | rating | bonus
+--------------------------------------------------------
+102         | Priya | IT      | 75000  | 5      | 10000
+105         | Neha  | Sales   | 68000  | 4      | 8500
+*/
+
+CREATE TABLE employee_information (
+    employee_ID INT PRIMARY KEY,
+    name VARCHAR(50),
+    division VARCHAR(20),
+    salary INT
+);
+
+CREATE TABLE performance (
+    employee_ID INT PRIMARY KEY,
+    rating INT
+);
+
+CREATE TABLE last_quarter_bonus (
+    employee_ID INT PRIMARY KEY,
+    bonus INT
+);
